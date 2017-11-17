@@ -3,9 +3,171 @@
   <head>
     <meta charset="utf-8">
     <title>Data Dashboard</title>
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-
+    <!--Barra superior logo de Laboratoria-->
+      <section class="section one">
+        <nav id="lab">
+          <img src="assets/images/logo-laboratoria.svg" alt="">
+        </nav>
+      </section>
+    <!--Sección donde se encuentra la generación y sección y las diferentes secciones de la página-->
+      <section class="section two">
+        <nav class="container">
+          <div class="menu-container">
+            <nav class="menu-nav">
+              <ul class="clearfix">
+                <li id="scl"><a href="#!">SANTIAGO DE CHILE 2017-2</a>
+              <!--menú desplegable-->    
+                  <ul class="sub-menu">
+                  <h1>COMMON CORE</h1>
+                    <li><a href="#"> Sprint 1</a></li>
+                    <li><a href="#">Sprint 2</a></li>
+                    <li><a href="#">Sprint 3</a></li>
+                    <li><a href="#">Sprint 4</a></li>
+                  <h1>Javascript</h1>
+                    <li><a href="#">Sprint 5</a></li>
+                    <li><a href="#">Sprint 6</a></li>
+                    <li><a href="#">Sprint 7</a></li>
+                    <li><a href="#">Sprint 8</a></li>
+                  <h1>UX Design</h1>
+                    <li><a href="#">Sprint 5</a></li>
+                    <li><a href="#">Sprint 6</a></li>
+                    <li><a href="#">Sprint 7</a></li>
+                    <li><a href="#">Sprint 8</a></li>    
+                  </ul>
+                </li>  
+              </ul>
+            </nav>
+          </div>
+        </nav>    
+        <nav class="container" id="options">
+          <ul>
+            <li>overview</li>
+            <li>students</li>
+            <li>teachers</li>
+          </ul>
+        </nav>        
+      </section>
+      <!--Información sobre matricula, logro y NPS-->
+      <section class="section three">
+        <div class="box uno">
+          <h3>Enrollement</h3>
+          <div class="minibox rigth">
+            <h4>120</h4>
+            <p># student currently enrolled</p>
+          </div>
+          <div class="minibox left">
+            <h4>20%</h4>
+            <p>% dropout</p>            
+          </div>
+          <img src="assets/images/bar-graph.png" alt="" id="graphic">
+        </div>
+        
+        <div class="box dos">
+          <h3>Achievement</h3>
+          <div class="minibox rigth">
+            <h4>105</h4>
+            <p># student that meet the target</p>
+          </div>
+          <div class="minibox left">
+            <h4>78%</h4>
+            <p>% of total(135)</p>        
+          </div>
+          <img src="assets/images/graph.png" alt="" id="graphic">
+        </div>  
+        
+        <div class="box tres">
+          <h3>NET PROMOTER SCORE</h3>
+          <div class="minibox rigth">
+            <h4>78%</h4>
+            <p>% CUMULATIVE NPS</p>
+          </div>
+          <div class="minibox left">
+            <ul>
+              <li>60% Promoters</li>
+              <li>30% Passive</li>
+              <li>10% Detractors</li>
+            </ul>
+          </div>
+          <img src="assets/images/graph.png" alt="" id="graphic">
+          </div>        
+      </section>
+      <!--Sección tech y life skills-->
+      <section class="section four">
+        <div>
+          <h3>TECH SKILLS</h3>
+            <div class="menu-container">
+              <nav class="menu-nav">
+                <ul class="clearfix">
+                  <li id="scl"><a href="#!">overall (cumulative)</a>
+              <!--menú desplegable-->    
+                  <ul class="sub-menu">
+                  <h1>COMMON CORE</h1>
+                    <li><a href="#"> Sprint 1</a></li>
+                    <li><a href="#">Sprint 2</a></li>
+                    <li><a href="#">Sprint 3</a></li>
+                    <li><a href="#">Sprint 4</a></li>
+                  <h1>Javascript</h1>
+                    <li><a href="#">Sprint 5</a></li>
+                    <li><a href="#">Sprint 6</a></li>
+                    <li><a href="#">Sprint 7</a></li>
+                    <li><a href="#">Sprint 8</a></li>
+                  <h1>UX Design</h1>
+                    <li><a href="#">Sprint 5</a></li>
+                    <li><a href="#">Sprint 6</a></li>
+                    <li><a href="#">Sprint 7</a></li>
+                    <li><a href="#">Sprint 8</a></li>    
+                  </ul>
+                </li>  
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <!--students, teachers, jedi-->
+      <section>
+        <div>
+          <h3>Enrollement</h3>
+          <div>
+            <h4>120</h4>
+            <p># student currently enrolled</p>
+          </div>
+          <div>
+            <h4>20%</h4>
+            <p>% dropout</p>            
+          </div>
+        </div>
+        <img src="assets/images/bar-graph.png" alt="">
+        <div>
+          <h3>Achievement</h3>
+          <div>
+            <h4>105</h4>
+            <p># student that meet the target</p>
+          </div>
+          <div>
+            <h4>78%</h4>
+            <p>% of total(135)</p>            
+          </div>
+        </div>  
+        <img src="assets/images/graph.png" alt="" id="graphic">
+        <div>
+          <h3>NET PROMOTER SCORE</h3>
+          <div>
+            <h4>78%</h4>
+            <p>% CUMULATIVE NPS</p>
+          </div>
+          <div>
+            <ul>
+              <li>60% Promoters</li>
+              <li>30% Passive</li>
+              <li>10% Detractors</li>
+            </ul>
+          </div>
+          <img src="assets/images/graph.png" alt="">
+          </div>
+      </section>
 		<!-- Base de datos -->
 		<script src="./js/data.js"></script>
 		<!-- Aquí va tus archivos JS -->

@@ -1,3 +1,137 @@
 /*
  * Estilos de tu proyecto
  */
+#lab {
+	width: 200px;
+	height: auto;
+	margin-left: 570px;
+}
+
+.section.two {
+	background-color: #E1E1E1;
+}
+#scl h1 {
+	border-bottom: 2px solid orange;
+	display: inline-block;
+}
+
+#scl a{
+	font-size: 30px;
+  text-decoration: none;
+	color: #000;
+}
+
+#scl ul li {
+	display: block;
+	padding: 0;
+	
+}
+
+#scl ul li a {
+	font-size: 20px;
+	border: none;
+}
+
+.container ul {
+	margin: 0;
+	padding-left: 80px;
+}
+
+.container ul li {
+	list-style: none;
+	display: inline-block;
+	font-size: 25px;
+	margin-top 0;
+	margin-bottom: 20px;
+	margin-right: 15px;
+}
+
+#options ul li:hover {
+	border-bottom: 2px solid orange;
+	display: inline-block;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+.menu-container {
+	width: 100%;
+	background: #E1E1E1;
+}
+
+.menu-nav {
+  position: relative;
+}
+
+.sub-menu {
+	width: 320px;
+	position: absolute;
+	display: none;
+	background: #fff;
+}
+
+.sub-menu h1 {
+	margin-left: -70px;
+	font-size: 18px;
+}
+
+.sub-menu li a {
+	margin-left: -50px;
+	color: #000;
+	text-decoration: none;
+	border: none;
+}
+
+.menu-nav ul li:hover>ul {
+	display: block;
+	border: none;
+}
+
+.menu-nav>ul>li:after {
+	content: "\25BC"; 
+	font-size: 20px;
+	padding-left: 5px; 
+	display: inline;
+	position: relative;	
+}
+
+.section.three {
+	width: 100%;
+	height: 450px;
+  background-color: #F7F7F7;
+}
+
+.box {
+	width: 400px;
+	height: 350px;
+	background-color: white;
+	margin-top: 50px;
+	margin-left: 30px;
+	float: left;
+	
+}
+
+.minibox {
+	width: 150px;
+	height: 100px;	
+	background-color: #F7F7F7;
+	text-align: center;
+	margin-left: 30px;
+  	float: left;
+}
+
+.minibox p {
+	font-size: 15px;
+	margin: 0;
+}
+
+.minibox h4 {
+	font-size: 25px;
+	margin: 0;
+}
+#graphic {
+	margin-top: 10px;
+	margin-left: 75px;
+}
