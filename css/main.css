@@ -1,40 +1,75 @@
-/*
- * Estilos de tu proyecto
- */
+body{
+	background-color: #F7F7F7;
+	margin: 0px;
+  	padding: 0px;
+  	width: 77%;
+	font-family: calibri, sans-serif;
+
+}
+
 #lab {
-	width: 200px;
+	width: 300px;
+	background-color: whitesmoke;
+  	border-right-color: lightgray;
+  	border-right-style: solid;
+  	border-right-width: 1px;
+  	display: flex;
+  	flex-direction: column;
+  	height: 800px;
+  	position: fixed;
+  	z-index: 1;
+}
+
+#lab img {
+	width: 150px;
 	height: auto;
-	margin-left: 570px;
+	align-self: center;
+	display: block;
+}
+
+hr {
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+
+#identify {
+	background-color: gray;
+  	display: flex;
+  	padding: 22px 16px;
+}
+
+#avatar {
+	width: 40px;
+	height: 40px;
+	align-items: center;
+  	background-color: #e1e1e1;
+  	border-radius: 100%;
+  	color: white;
+  	display: flex;
+  	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  	font-size: 20px;  
+  	justify-content: center;
+ }
+
+#data {
+  	padding: 0px 16px;
+ }
+
+.section{
+	margin-left: 300px;
 }
 
 .section.two {
-	background-color: #E1E1E1;
+	width: 101%;
+	background-color: #E1E1E1;	
 }
-#scl h1 {
-	border-bottom: 2px solid orange;
-	display: inline-block;
+.container {
+	margin-left: -10px;
 }
-
-#scl a{
-	font-size: 30px;
-  text-decoration: none;
-	color: #000;
-}
-
-#scl ul li {
-	display: block;
-	padding: 0;
-	
-}
-
-#scl ul li a {
-	font-size: 20px;
-	border: none;
-}
-
 .container ul {
 	margin: 0;
-	padding-left: 80px;
+	margin-left: 80px;
 }
 
 .container ul li {
@@ -42,13 +77,38 @@
 	display: inline-block;
 	font-size: 25px;
 	margin-top 0;
-	margin-bottom: 20px;
-	margin-right: 15px;
+	margin-bottom: 0px;
+	display: block;
+	padding: 0;	
 }
 
-#options ul li:hover {
+.container ul li a {
+	font-size: 15px;
+	border: none;
+}
+
+#scl {
+	padding: 10px 0;
+}
+
+.options{
+	width: 100%;
+	height: auto;
+	padding: 10px 0;
+	text-align: center;
+	border-bottom: 1px solid gray;
+}
+
+.options a{
+	display: inline;
+	text-decoration: none;
+  	color: black;
+	font-weight: bold;
+}
+
+.options:hover {
 	border-bottom: 2px solid orange;
-	display: inline-block;
+	background-color: gray;
 }
 
 .clearfix:after {
@@ -56,20 +116,21 @@
 	display: table;
 }
 
-.menu-container {
-	width: 100%;
-	background: #E1E1E1;
+.clearfix {
+	background-color: gray;
 }
 
 .menu-nav {
-  position: relative;
+  	position: relative;
+	margin-left: -70px;
 }
 
 .sub-menu {
-	width: 320px;
+	width: 100px;
+	height: auto;
 	position: absolute;
 	display: none;
-	background: #fff;
+	background: whitesmoke;
 }
 
 .sub-menu h1 {
@@ -82,6 +143,7 @@
 	color: #000;
 	text-decoration: none;
 	border: none;
+	padding: 0;
 }
 
 .menu-nav ul li:hover>ul {
@@ -89,8 +151,7 @@
 	border: none;
 }
 
-.menu-nav>ul>li:after {
-	content: "\25BC"; 
+.menu-nav>ul>li:after { 
 	font-size: 20px;
 	padding-left: 5px; 
 	display: inline;
@@ -99,23 +160,25 @@
 
 .section.three {
 	width: 100%;
-	height: 450px;
-  background-color: #F7F7F7;
+	height: 380px;
 }
 
 .box {
-	width: 400px;
-	height: 350px;
+	width: 300px;
+	height: 300px;
 	background-color: white;
 	margin-top: 50px;
 	margin-left: 30px;
-	float: left;
-	
+	float: left;	
+}
+
+.box h3 {
+	margin-left: 30px;
 }
 
 .minibox {
-	width: 150px;
-	height: 100px;	
+	width: 100px;
+	height: 70px;	
 	background-color: #F7F7F7;
 	text-align: center;
 	margin-left: 30px;
@@ -123,15 +186,157 @@
 }
 
 .minibox p {
-	font-size: 15px;
+	font-size: 12px;
 	margin: 0;
 }
 
 .minibox h4 {
-	font-size: 25px;
+	font-size: 20px;
 	margin: 0;
 }
+
+.minibox li:first-child{
+	margin-top: -10px;
+}
+
+.minibox li {
+	font-size: 12px;
+	text-align: left;
+	margin-left: -20px;
+}
+
 #graphic {
+	width: 80%;
 	margin-top: 10px;
-	margin-left: 75px;
+	margin-left: 30px;
+}
+
+.section.four{
+	width: 90%;
+	height: auto;
+	background-color: white;
+	margin-left: 350px;
+}
+
+.section.five {
+	width: 100%;
+	height: 380px;
+	margin-top: 50px;
+	margin-left: 350px;
+	background-color: white;
+}
+
+.section.six {
+	width: 100%;
+	height: 380px;
+}
+
+/*menu overall*/
+
+#overall h1 {
+	border-bottom: 2px solid orange;
+	display: inline-block;
+}
+
+#overall a{
+	font-size: 18px;
+  	text-decoration: none;
+	color: lightgray;
+	border-bottom: 1px solid black;
+}
+
+#overall ul li {
+	display: block;
+	padding: 0;
+	
+}
+
+#overall ul li a {
+	font-size: 20px;
+	border: none;
+}
+
+.menu-nav h3{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+/*duplicado*/
+
+.barra h1 {
+	border-bottom: 2px solid orange;
+	display: inline-block;
+}
+
+.barra a {
+	font-size: 15px;
+  	text-decoration: none;
+	color: white;
+}
+
+.barra ul {
+	margin: 0;
+	padding-left: 80px;
+}
+
+.barra ul li {
+	list-style: none;
+	display: inline-block;
+	font-size: 25px;
+	margin-top 0;
+	margin-bottom: 0px;
+	display: block;
+	padding: 0;	
+}
+
+.barra ul li a {
+	font-size: 15px;
+	border: none;
+}
+
+.clear:after {
+	content: "";
+	display: table;
+}
+
+.clear {
+	background-color: gray;
+}
+
+.menu {
+  	position: relative;
+	margin-left: -70px;
+}
+
+.sub-men {
+	width: 100px;
+	height: auto;
+	position: absolute;
+	display: none;
+	background: whitesmoke;
+}
+
+.sub-men h1 {
+	margin-left: -70px;
+	font-size: 18px;
+}
+
+.sub-men li a {
+	margin-left: -50px;
+	color: #000;
+	text-decoration: none;
+	border: none;
+	padding: 0;
+}
+
+.menu ul li:hover>ul {
+	display: block;
+	border: none;
+}
+
+.menu>ul>li:after { 
+	font-size: 20px;
+	padding-left: 5px; 
+	display: inline;
+	position: relative;	
 }

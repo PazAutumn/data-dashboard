@@ -6,50 +6,78 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <!--Barra superior logo de Laboratoria-->
-      <section class="section one">
-        <nav id="lab">
-          <img src="assets/images/logo-laboratoria.svg" alt="">
-        </nav>
-      </section>
-    <!--Sección donde se encuentra la generación y sección y las diferentes secciones de la página-->
-      <section class="section two">
-        <nav class="container">
-          <div class="menu-container">
-            <nav class="menu-nav">
-              <ul class="clearfix">
-                <li id="scl"><a href="#!">SANTIAGO DE CHILE 2017-2</a>
+    
+    <!--Barra lateral logo de Laboratoria-->
+    <main>
+      <nav id="lab">
+        <img src="assets/images/logo-laboratoria.svg" alt="">
+        <hr>
+        <div id="identify">
+          <div id="avatar">J</div>
+          <div id="data">
+            <div>Jane</div>
+            <div>JaneDoe@laboratoria.cl</div>
+          </div>
+        </div>  
+        <hr>
+        <div class="options">
+          <a href="">overview</a>
+        </div>
+        <div class="options">
+          <a href="">students</a>
+        </div>
+        <div class="options">          
+          <a href="">teachers</a>
+        </div> 
+      </nav>
+    </main>
+       <section class="section two">
+        <header class="barra">
+          <div class="menu-cont">
+            <nav class="menu">
+              <ul class="clear">
+                <li id="scl"><a href="#!" id="san">SANTIAGO DE CHILE 2017-2 &#9660;</a>
               <!--menú desplegable-->    
-                  <ul class="sub-menu">
-                  <h1>COMMON CORE</h1>
-                    <li><a href="#"> Sprint 1</a></li>
-                    <li><a href="#">Sprint 2</a></li>
-                    <li><a href="#">Sprint 3</a></li>
-                    <li><a href="#">Sprint 4</a></li>
-                  <h1>Javascript</h1>
-                    <li><a href="#">Sprint 5</a></li>
-                    <li><a href="#">Sprint 6</a></li>
-                    <li><a href="#">Sprint 7</a></li>
-                    <li><a href="#">Sprint 8</a></li>
-                  <h1>UX Design</h1>
-                    <li><a href="#">Sprint 5</a></li>
-                    <li><a href="#">Sprint 6</a></li>
-                    <li><a href="#">Sprint 7</a></li>
-                    <li><a href="#">Sprint 8</a></li>    
+                  <ul class="sub-men">
+                  <h1>LIMA</h1>
+                    <li><a href="#"> 2015-I</a></li>
+                    <li><a href="#">2015-II</a></li>
+                    <li><a href="#">2016-I</a></li>
+                    <li><a href="#">2016-II</a></li>
+                    <li><a href="#">2017-I</a></li>
+                    <li><a href="#">2017-II</a></li>
+                  <h1>AREQUIPA</h1>
+                    <li><a href="#"> 2015-I</a></li>
+                    <li><a href="#">2015-II</a></li>
+                    <li><a href="#">2016-I</a></li>
+                    <li><a href="#">2016-II</a></li>
+                    <li><a href="#">2017-I</a></li>
+                    <li><a href="#">2017-II</a></li>
+                  <h1>SANTIAGO</h1>
+                    <li><a href="#"> 2015-I</a></li>
+                    <li><a href="#">2015-II</a></li>
+                    <li><a href="#">2016-I</a></li>
+                    <li><a href="#">2016-II</a></li>
+                    <li><a href="#">2017-I</a></li>
+                    <li><a href="#">2017-II</a></li>
+                  <h1>CIUDAD DE MEXICO</h1>
+                    <li><a href="#"> 2015-I</a></li>
+                    <li><a href="#">2015-II</a></li>
+                    <li><a href="#">2016-I</a></li>
+                    <li><a href="#">2016-II</a></li>
+                    <li><a href="#">2017-I</a></li>
+                    <li><a href="#">2017-II</a></li>
                   </ul>
                 </li>  
               </ul>
             </nav>
           </div>
-        </nav>    
-        <nav class="container" id="options">
-          <ul>
-            <li>overview</li>
-            <li>students</li>
-            <li>teachers</li>
-          </ul>
-        </nav>        
+        </header>
       </section>
+    <!--Sección donde se encuentra la generación y sección y las diferentes secciones de la página-->
+          
+              
+      
       <!--Información sobre matricula, logro y NPS-->
       <section class="section three">
         <div class="box uno">
@@ -96,12 +124,13 @@
       </section>
       <!--Sección tech y life skills-->
       <section class="section four">
-        <div>
-          <h3>TECH SKILLS</h3>
-            <div class="menu-container">
-              <nav class="menu-nav">
-                <ul class="clearfix">
-                  <li id="scl"><a href="#!">overall (cumulative)</a>
+        <nav class="container">
+          <div class="menu-container">
+            <nav class="menu-nav">
+              <ul class="clearfix">
+                <h3>TECH SKILLS</h3>
+                <li id="overall">
+                  <a href="#!">overall (cumulative) &#9660;</a>
               <!--menú desplegable-->    
                   <ul class="sub-menu">
                   <h1>COMMON CORE</h1>
@@ -124,50 +153,105 @@
               </ul>
             </nav>
           </div>
-        </div>
+          <li class="minibox rigth">
+            <h4>105</h4>
+            <p># student that meet the target</p>
+          </li>
+          <li class="minibox left">
+            <h4>78%</h4>
+            <p>% of total(135)</p>        
+          </li>
+          <img src="assets/images/rectangular-graphic.png" alt="">
+          <img src="assets/images/circle-graphic.png" alt="">
+        </nav>
       </section>
-      <!--students, teachers, jedi-->
-      <section>
-        <div>
-          <h3>Enrollement</h3>
-          <div>
-            <h4>120</h4>
-            <p># student currently enrolled</p>
+      <section class="section five">
+        <nav class="container">
+          <div class="menu-container">
+            <nav class="menu-nav">
+              <ul class="clearfix">
+                <h3>LIFE SKILLS</h3>
+                <li id="overall">
+                  <a href="#!">overall (cumulative) &#9660;</a>
+              <!--menú desplegable-->    
+                  <ul class="sub-menu">
+                  <h1>COMMON CORE</h1>
+                    <li><a href="#"> Sprint 1</a></li>
+                    <li><a href="#">Sprint 2</a></li>
+                    <li><a href="#">Sprint 3</a></li>
+                    <li><a href="#">Sprint 4</a></li>
+                  <h1>Javascript</h1>
+                    <li><a href="#">Sprint 5</a></li>
+                    <li><a href="#">Sprint 6</a></li>
+                    <li><a href="#">Sprint 7</a></li>
+                    <li><a href="#">Sprint 8</a></li>
+                  <h1>UX Design</h1>
+                    <li><a href="#">Sprint 5</a></li>
+                    <li><a href="#">Sprint 6</a></li>
+                    <li><a href="#">Sprint 7</a></li>
+                    <li><a href="#">Sprint 8</a></li>    
+                  </ul>
+                </li>  
+              </ul>
+            </nav>
           </div>
-          <div>
-            <h4>20%</h4>
-            <p>% dropout</p>            
-          </div>
-        </div>
-        <img src="assets/images/bar-graph.png" alt="">
-        <div>
-          <h3>Achievement</h3>
-          <div>
+          <div class="minibox rigth">
             <h4>105</h4>
             <p># student that meet the target</p>
           </div>
-          <div>
+          <div class="minibox left">
             <h4>78%</h4>
-            <p>% of total(135)</p>            
+            <p>% of total(135)</p>        
           </div>
+          <img src="assets/images/rectangular-graphic.png" alt="">
+          <img src="assets/images/circle-graphic.png" alt="">
+        </nav>
+      </section>
+      <!--students, teachers, jedi-->
+      <section class="section six">
+        <div class="box uno">
+          <h3>Enrollement</h3>
+          <div class="minibox rigth">
+            <h4>120</h4>
+            <p># student currently enrolled</p>
+          </div>
+          <div class="minibox left">
+            <h4>20%</h4>
+            <p>% dropout</p>            
+          </div>
+          <img src="assets/images/bar-graph.png" alt="" id="graphic">
+        </div>
+        
+        <div class="box dos">
+          <h3>Achievement</h3>
+          <div class="minibox rigth">
+            <h4>105</h4>
+            <p># student that meet the target</p>
+          </div>
+          <div class="minibox left">
+            <h4>78%</h4>
+            <p>% of total(135)</p>        
+          </div>
+          <img src="assets/images/graph.png" alt="" id="graphic">
         </div>  
-        <img src="assets/images/graph.png" alt="" id="graphic">
-        <div>
+        
+        <div class="box tres">
           <h3>NET PROMOTER SCORE</h3>
-          <div>
+          <div class="minibox rigth">
             <h4>78%</h4>
             <p>% CUMULATIVE NPS</p>
           </div>
-          <div>
+          <div class="minibox left">
             <ul>
               <li>60% Promoters</li>
               <li>30% Passive</li>
               <li>10% Detractors</li>
             </ul>
           </div>
-          <img src="assets/images/graph.png" alt="">
-          </div>
-      </section>
+          <img src="assets/images/graph.png" alt="" id="graphic">
+          </div>        
+      </section>    
+    </main>  
 		<!-- Base de datos -->
 		<script src="./js/data.js"></script>
 		<!-- Aquí va tus archivos JS -->
