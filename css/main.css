@@ -458,6 +458,11 @@ hr {
 	border-bottom: 2px solid orange;
 }
 
+.sub-men li input {
+	margin-left: -20px;
+}
+
+
 .menu ul li:hover>ul {
 	display: block;
 	border: none;
