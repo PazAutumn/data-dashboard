@@ -98,6 +98,34 @@ hr {
 
 #scl {
 	padding: 13px 0;
+	font-size: 10px;
+  text-decoration: none;
+	color: white;
+	margin-left: -50px;
+	margin: 0 5px;
+	display: inline-block;
+}
+
+#scl h1 {
+	border-bottom: 2px solid orange;
+	display: inline-block;
+	color: white;
+	font-size: 13px;
+}
+
+#scl ul li a {
+	font-size: 15px;
+	border: none;
+	color: white;
+	display: block;
+	padding: 2px 0;
+	border-bottom: 2px solid #333333;
+	display: inline-block;
+}
+
+#scl ul li a:hover {
+	border-bottom: 2px solid orange;
+	display: inline-block;
 }
 
 #san {
@@ -148,11 +176,15 @@ hr {
 }
 
 .clearfix {
-	background-color: #333333; 
+	background-color: #333333;
+}
+
+.clearfix h3 {
+	color: orange;
+	margin-left: -50px;
 }
 
 .menu-nav {
-	position: relative;
 	margin-left: 10px;
 }
 
@@ -175,6 +207,10 @@ hr {
 	text-decoration: none;
 	border: none;
 	padding: 0;
+}
+
+.sub-menu.latest {
+	width: 250px;
 }
 
 .menu-nav ul li:hover>ul {
@@ -238,6 +274,15 @@ hr {
 	margin-left: -35px;
 	color: white;
 	list-style: none;
+}
+
+.minibox.last {
+	width: 200px;
+	margin-left: 45px;
+}
+
+.minibox.last h4{
+	padding: 5px 0;
 }
 
 .boxie {
@@ -306,24 +351,34 @@ hr {
 #overall h1 {
 	border-bottom: 2px solid orange;
 	display: inline-block;
+	color: white;
+	font-size: 13px;
 }
 
-#overall a{
-	font-size: 18px;
-  	text-decoration: none;
-	color: lightgray;
-	border-bottom: 1px solid black;
-}
-
-#overall ul li {
-	display: block;
-	padding: 0;
-	
+#overall {
+	font-size: 10px;
+  text-decoration: none;
+	color: white;
+	border-bottom: 1px solid orange;
+	margin-left: -50px;
+	margin: 0 5px;
+	display: inline-block;
 }
 
 #overall ul li a {
-	font-size: 20px;
+	font-size: 15px;
 	border: none;
+	color: white;
+	display: block;
+	font-weight: bold;
+	padding: 2px 0;
+	border-bottom: 2px solid #333333;
+	display: inline-block;
+}
+
+#overall ul li a:hover {
+	border-bottom: 2px solid orange;
+	display: inline-block;
 }
 
 .menu-nav h3{
@@ -382,20 +437,25 @@ hr {
 	height: auto;
 	position: absolute;
 	display: none;
-	background: whitesmoke;
+	background: #333333;
 }
 
 .sub-men h1 {
 	margin-left: -70px;
-	font-size: 18px;
+	font-size: 16px;
+	color: white;
 }
 
 .sub-men li a {
 	margin-left: -50px;
-	color: #000;
+	color: #fff;
 	text-decoration: none;
 	border: none;
-	padding: 0;
+	font-weight: bold;
+}
+
+.sub-men li a:hover {
+	border-bottom: 2px solid orange;
 }
 
 .menu ul li:hover>ul {
