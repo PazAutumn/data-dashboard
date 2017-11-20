@@ -3,14 +3,14 @@ body{
 	margin: 0px;
   	padding: 0px;
   	width: 77%;
-	font-family: calibri, sans-serif;
+	font-family: roboto, sans-serif;
 
 }
 
 #lab {
 	width: 300px;
-	background-color: whitesmoke;
-  	border-right-color: lightgray;
+	background-color: #333333;
+  	border-right-color: #333333;
   	border-right-style: solid;
   	border-right-width: 1px;
   	display: flex;
@@ -20,21 +20,28 @@ body{
   	z-index: 1;
 }
 
+#labimg {
+	width: 100%;
+	height: auto;
+	background-color: whitesmoke;
+	display: block;
+}
+
 #lab img {
 	width: 150px;
 	height: auto;
-	align-self: center;
-	display: block;
+	margin-left: 75px;
 }
 
 hr {
 	width: 100%;
 	height: auto;
 	margin: 0;
+	background-color: #333333;
 }
 
 #identify {
-	background-color: gray;
+	background-color: lightgray;
   	display: flex;
   	padding: 22px 16px;
 }
@@ -45,7 +52,6 @@ hr {
 	align-items: center;
   	background-color: #e1e1e1;
   	border-radius: 100%;
-  	color: white;
   	display: flex;
   	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   	font-size: 20px;  
@@ -54,41 +60,49 @@ hr {
 
 #data {
   	padding: 0px 16px;
+	  color: black;
  }
 
 .section{
 	margin-left: 300px;
+	margin-bottom: 30px;
 }
 
 .section.two {
 	width: 101%;
-	background-color: #E1E1E1;	
+	height: 0;
 }
-.container {
+
+.menu-container {
 	margin-left: -10px;
 }
-.container ul {
+.menu-container ul {
 	margin: 0;
 	margin-left: 80px;
 }
 
-.container ul li {
+.menu-container ul li {
 	list-style: none;
 	display: inline-block;
 	font-size: 25px;
-	margin-top 0;
+	margin-top: 0;
 	margin-bottom: 0px;
 	display: block;
 	padding: 0;	
 }
 
-.container ul li a {
+.menu-container ul li a {
 	font-size: 15px;
 	border: none;
 }
 
 #scl {
-	padding: 10px 0;
+	padding: 13px 0;
+}
+
+#san {
+	color: orange;
+	font-weight: bold;
 }
 
 .options{
@@ -96,19 +110,36 @@ hr {
 	height: auto;
 	padding: 10px 0;
 	text-align: center;
-	border-bottom: 1px solid gray;
+	border-bottom: 1px solid orange;
 }
 
 .options a{
 	display: inline;
 	text-decoration: none;
-  	color: black;
+  	color: white;
 	font-weight: bold;
+}
+
+.options.b {
+	background-color: orange;
+}
+
+.options.b a {
+	color: black;
+}
+
+.options:first-child {
+	background-color: orange;
 }
 
 .options:hover {
 	border-bottom: 2px solid orange;
-	background-color: gray;
+	background-color: orange;
+
+}
+
+.options a:hover {
+	color: black;
 }
 
 .clearfix:after {
@@ -117,12 +148,12 @@ hr {
 }
 
 .clearfix {
-	background-color: gray;
+	background-color: #333333; 
 }
 
 .menu-nav {
-  	position: relative;
-	margin-left: -70px;
+	position: relative;
+	margin-left: 10px;
 }
 
 .sub-menu {
@@ -130,7 +161,7 @@ hr {
 	height: auto;
 	position: absolute;
 	display: none;
-	background: whitesmoke;
+	background: #333333;
 }
 
 .sub-menu h1 {
@@ -179,7 +210,7 @@ hr {
 .minibox {
 	width: 100px;
 	height: 70px;	
-	background-color: #F7F7F7;
+	background-color: #333333;
 	text-align: center;
 	margin-left: 30px;
   	float: left;
@@ -188,21 +219,61 @@ hr {
 .minibox p {
 	font-size: 12px;
 	margin: 0;
+	color: white;
 }
 
 .minibox h4 {
 	font-size: 20px;
 	margin: 0;
+	color: orange;
 }
 
 .minibox li:first-child{
-	margin-top: -10px;
+	margin-top: -5px;
 }
 
 .minibox li {
 	font-size: 12px;
 	text-align: left;
-	margin-left: -20px;
+	margin-left: -35px;
+	color: white;
+	list-style: none;
+}
+
+.boxie {
+	width: 400px;
+	height: auto;	
+	background-color: #333333;
+	text-align: center;
+	padding: 10px;
+	margin-left: 30px;
+	margin-top: 10px;
+	float: left;
+}
+
+.boxie p {
+	font-size: 25px;
+	margin: 0;
+	color: white;
+}
+
+.boxie h4 {
+	font-size: 50px;
+	margin: 0;
+	color: orange;
+}
+
+.rect img{
+	width: 400px;
+	height: auto;
+	margin: 40px;
+	float: left;
+}
+
+.circle img{
+	width: 200px;
+	height: auto;
+	margin: 100px;
 }
 
 #graphic {
@@ -213,17 +284,16 @@ hr {
 
 .section.four{
 	width: 90%;
-	height: auto;
+	height: 480px;
 	background-color: white;
 	margin-left: 350px;
 }
 
 .section.five {
-	width: 100%;
-	height: 380px;
-	margin-top: 50px;
-	margin-left: 350px;
+	width: 90%;
+	height: 480px;
 	background-color: white;
+	margin-left: 350px;
 }
 
 .section.six {
@@ -258,7 +328,6 @@ hr {
 
 .menu-nav h3{
 	display: inline-block;
-	margin-right: 20px;
 }
 
 /*duplicado*/
@@ -300,7 +369,7 @@ hr {
 }
 
 .clear {
-	background-color: gray;
+	background-color: #333333;
 }
 
 .menu {
