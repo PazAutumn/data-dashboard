@@ -66,7 +66,25 @@ hse=1200
 }
 */
 //NPS
+var nps = document.getElementById('nps');
 
+//detalle de nps
+var promo = document.getElementById('promoters');
+var pass = document.getElementById('passive');
+var detrac = document.getElementById('detractors');
+
+var promoters = parseInt((ratings[0].nps.promoters + ratings[1].nps.promoters)/2) +"% Promoters";
+promo.innerHTML = promoters;
+
+var passive = parseInt((ratings[0].nps.passive + ratings[1].nps.passive)/2) +"% Passive";
+pass.innerHTML = passive;
+
+var detractors = parseInt((ratings[0].nps.detractors + ratings[1].nps.detractors)/2) +"% Detractors";
+detrac.innerHTML = detractors;
+
+//porcentaje de nps
+var npsPercent = (parseInt(promoters) - parseInt(detractors)) + "%";
+nps.innerHTML = npsPercent;
 
 //Tech Skills
 
