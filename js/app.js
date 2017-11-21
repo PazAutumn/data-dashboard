@@ -45,20 +45,7 @@ var porAverage = document.getElementById('totalMeetTarget');
 
 var averagePercent = parseInt((Average*100)/generation.length) + "%";
 porAverage.innerHTML = averagePercent;
-/* formula para calcular el porcentaje de aprobación
 
-[Puntaje Técnico] = ([Técnico S1] + [Técnico S2] + [Técnico S3]) / [Cantidad Sprints]
-
-[Puntaje HSE] = ([HSE S1] + [HSE 2] + [HSE 3]) / [Cantidad Sprints]
-
-tech=1800
-70 tech=1260
-hse=1200
-70 hse=840
-*/
-
-
-//porcentaje de alumnas que alcanzan el target
 	/*for (var i = 0; i < ratings.length; i++){
 	 if(ratings[i].student.cumple >= 70){
 	 	cumple = ratings[i].student.cumple;
@@ -87,10 +74,99 @@ var npsPercent = (parseInt(promoters) - parseInt(detractors)) + "%";
 nps.innerHTML = npsPercent;
 
 //Tech Skills
+var tech = document.getElementById('numTech');
+var porTech = document.getElementById('porTech');
+/* formula para calcular el porcentaje de aprobación
 
+[Puntaje Técnico] = ([Técnico S1] + [Técnico S2] + [Técnico S3]) / [Cantidad Sprints]
+
+[Puntaje HSE] = ([HSE S1] + [HSE 2] + [HSE 3]) / [Cantidad Sprints]
+
+tech=1800
+70 tech=1260
+hse=1200
+70 hse=840
+*/
+
+for (var i =0; i < generation.length; i++){
+
+	if(generation[i].sprints.length > 0){
+
+	totaltechstudent = 0;
+	//totalhsestudent = 0;
+	totaltechstudentpor=0;
+	//totalhsestudentpor=0;
+	totaltech = 0;
+
+	//Calculando el total de porcentajes en puntajes tech y hse
+		for (j = 0; j < generation[i].sprints.length; j++){
+  			totaltechstudent= generation[i].sprints[j].score.tech;
+            totaltechstudentpor += (totaltechstudent*100)/1800;
+            
+            if(totaltechstudent >= 1260){
+            	totaltech = totaltech+1;
+            }
+            tech.innerHTML = totaltech;
+
+	        //totalhsestudent = generation[i].sprints[j].score.hse;
+            //totalhsestudentpor += (totalhsestudent*100)/1200;
+            
+        }
+
+            totaltechstudentpor = parseInt((totaltechstudentpor / 4));
+            porTech.innerHTML = totaltechstudentpor;
+            //totalhsestudentpor =   (totalhsestudentpor / 4);
+            //var totaltech;
+            //if (totaltechstudentpor >= 70 &&  totalhsestudentpor >= 70){
+            //    totaltech++;
+            //}
+          
+	}
+}
 //Life Skills
+var hse = document.getElementById('hse');
+var porhse = document.getElementById('hsePor');
+for (var i =0; i < generation.length; i++){
 
+	if(generation[i].sprints.length > 0){
+
+	//totaltechstudent = 0;
+	totalhsestudent = 0;
+	//totaltechstudentpor=0;
+	totalhsestudentpor=0;
+	totalhse = 0;
+	
+
+	//Calculando el total de porcentajes en puntajes tech y hse
+		for (j = 0; j < generation[i].sprints.length; j++){
+  	/*		totaltechstudent= generation[i].sprints[j].score.tech;
+            totaltechstudentpor += (totaltechstudent*100)/1800;
+    */        
+	        totalhsestudent = generation[i].sprints[j].score.hse;
+            totalhsestudentpor += (totalhsestudent*100)/1200;
+            
+             if(totalhsestudent >= 840){
+            	totalhse = totalhse+1;
+            }
+            hse.innerHTML = totalhse;
+
+        }
+
+            //totaltechstudentpor = (totaltechstudentpor / 4);
+            totalhsestudentpor =  parseInt((totalhsestudentpor / 4)) + "%";
+            porhse.innerHTML = totalhsestudentpor;
+            //var totaltech;
+            //if (totaltechstudentpor >= 70 &&  totalhsestudentpor >= 70){
+            //    totaltech++;
+            //}
+           
+	}
+}
 //STUDENT SATISFACTION
+var satis = document.getElementById('satisfaction');
+
+var satisfaction = parseInt((ratings[0].student.supera + ratings[1].student.supera)/2);
+satis.innerHTML = satisfaction;
 
 //TEACHER RATING
 var teacher = document.getElementById('teacher');
