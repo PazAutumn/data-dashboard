@@ -148,11 +148,11 @@ hr {
 	font-weight: bold;
 }
 
-.options.b {
+#a {
 	background-color: orange;
 }
 
-.options.b a {
+#a a {
 	color: black;
 }
 
@@ -168,6 +168,16 @@ hr {
 
 .options a:hover {
 	color: black;
+}
+
+.optionSelect {
+	background-color: orange;
+	color: black;
+}
+
+.optionUnselect {
+	background-color: #333333;
+	color: white;
 }
 
 .clearfix:after {

@@ -181,3 +181,20 @@ var jedi = document.getElementById('jedi');
 var jediRating = (ratings[0].jedi + ratings[1].jedi)/2;
 jedi.innerHTML = jediRating;
 
+//evento de click botones laterales
+
+var overview = document.getElementById('overview');
+var students = document.getElementById('students');
+var teachers = document.getElementById('teachers');
+var optiona = document.getElementById('a');
+var optionb = document.getElementById('b');
+var optionc = document.getElementById('c');
+
+overview.addEventListener("click", function(){
+
+	optiona.setAttribute("style", "background-color: #333333");
+})
+
+students.addEventListener("click", function(){
+	optionb.setAttribute("style", "background-color: orange");
+})
