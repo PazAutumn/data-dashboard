@@ -30,7 +30,21 @@ dropout.innerHTML = counter;
 
 //Achievement
 var achievement = document.getElementById('meetTarget');
+var ratings = data.SCL["2017-2"].ratings;
+//guardando en variables los datos de rating de las alumnas que cumplen con el 70%
+var Sprint1 = ratings[0].student.cumple;
+var Sprint2 = ratings[1].student.cumple;
+//cambiando el porcentaje a numero
+Sprint1 = parseInt((Sprint1*generation.length)/100);
+Sprint2 = parseInt((Sprint2*generation.length)/100);
+//sacando numero en promedio de estudiantes que superaron el 70% del tech en todos los sprints
+var Average = parseInt((Sprint1+Sprint2)/2);
+achievement.innerHTML = Average;
+//porcentaje del tech
+var porAverage = document.getElementById('totalMeetTarget');
 
+var averagePercent = parseInt((Average*100)/generation.length) + "%";
+porAverage.innerHTML = averagePercent;
 /* formula para calcular el porcentaje de aprobación
 
 [Puntaje Técnico] = ([Técnico S1] + [Técnico S2] + [Técnico S3]) / [Cantidad Sprints]
@@ -55,29 +69,21 @@ hse=1200
 
 
 //Tech Skills
-var tech = document.getElementById('numTech');
-var ratings = data.SCL["2017-2"].ratings;
-//guardando en variables los datos de rating de las alumnas que cumplen con el 70%
-var techSprint1 = ratings[0].student.cumple;
-var techSprint2 = ratings[1].student.cumple;
-//cambiando el porcentaje a numero
-techSprint1 = parseInt((techSprint1*generation.length)/100);
-techSprint2 = parseInt((techSprint2*generation.length)/100);
-//sacando numero en promedio de estudiantes que superaron el 70% del tech en todos los sprints
-var techAverage = parseInt((techSprint1+techSprint2)/2);
-tech.innerHTML = techAverage;
-//porcentaje del tech
-var porTech = document.getElementById('porTech');
-
-var techPercent = parseInt((techAverage*100)/generation.length) + "%";
-porTech.innerHTML = techPercent;
 
 //Life Skills
 
 //STUDENT SATISFACTION
 
 //TEACHER RATING
+var teacher = document.getElementById('teacher');
+
+var teacherRating = (ratings[0].teacher + ratings[1].teacher)/2;
+teacher.innerHTML = teacherRating;
+
 
 //JEDI MASTER RATING
+var jedi = document.getElementById('jedi');
 
+var jediRating = (ratings[0].jedi + ratings[1].jedi)/2;
+jedi.innerHTML = jediRating;
 
