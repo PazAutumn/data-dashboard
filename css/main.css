@@ -474,3 +474,508 @@ hr {
 	display: inline;
 	position: relative;	
 }
+
+/*Alumnas HTML*/
+
+.perfiles{
+
+	background-color: #F7F7F7;
+
+	width: 100%;
+
+    height: 1000px;
+
+    padding-top: 40px;
+
+    font-family: 'Roboto', sans-serif;
+
+    margin-left: 300px
+
+
+
+}
+
+
+
+.buscador{
+
+	width: 530px;
+
+	height: 40px;
+
+	border: 1px solid orange;
+
+	background-color: #333333;
+
+	font-size: orange;
+
+	margin-left: 400px;
+
+	float: left;
+
+	
+
+}
+
+
+
+#buscar{
+
+	width: 340px;
+
+	border: transparent;
+
+	background-color: #333333;
+
+	color:orange;
+
+}
+
+
+
+.fa-search{
+
+	color: orange;
+
+    padding-top: 15px;
+
+    padding-bottom: 15px;
+
+    padding-left: 10px;
+
+}
+
+
+
+.selecciones{	
+
+	height: 200px;
+
+    margin-left: 401px;
+
+    margin-top: -600px;
+
+
+
+}
+
+
+
+.barra_datos{
+
+    background-color: #333333;
+
+    height: 590px;
+
+    width: 300px;
+
+    margin-left: 80px;
+
+    margin-top: 0px;
+
+    color:orange;  
+
+    border: 1px solid orange;
+
+}
+
+
+
+
+
+.foto_perfil{
+
+	width: 190px;
+
+	height: 190px;
+
+	margin-left: auto;
+
+	margin-right: auto;
+
+	margin-top: 19px;
+
+	margin-bottom: 5px;
+
+	background-image: url(../assets/images/foto de perfil.jpg);
+
+
+
+}
+
+
+
+img{
+
+    margin-left: auto;
+
+    margin-right: 30px;
+
+    padding-left: 25px;
+
+    width: 150px;
+
+}
+
+
+
+hr{
+
+	width: 80%;
+
+    height: 1px;
+
+    border-color: orange;
+
+    background-color: orange;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    margin-bottom: 0px;
+
+}
+
+
+
+.nombre{
+
+	width: 250px;
+
+	height: 40px;
+
+	margin-left: auto;
+
+	margin-right: auto;
+
+	margin-top:60px;
+
+	border: 1px solid orange;
+
+}
+
+
+
+.fa-user{
+
+	margin-top: 15px;
+
+    margin-left: 10px;
+
+    height: 24px;
+
+    padding-top: 0px;
+
+    width: 40px;
+
+    color:orange;
+
+}
+
+
+
+.telefono{
+
+	width: 250px;
+
+	height: 40px;
+
+	margin-left: auto;
+
+	margin-right: auto;
+
+	margin-top: 30px;
+
+	border: 1px solid orange;
+
+
+
+}
+
+.fa-mobile{
+
+    margin-top: 15px;
+
+    margin-left: 10px;
+
+    height: 24px;
+
+    padding-top: 0px;
+
+    width: 40px;
+
+}
+
+
+
+.mail{
+
+	width: 250px;
+
+	height: 40px;
+
+	margin-left: auto;
+
+	margin-right: auto;
+
+	margin-top: 30px;
+
+	border: 1px solid orange;
+
+}
+
+.fa-envelope-o{
+
+    margin-top: 15px;
+
+    margin-left: 10px;
+
+    height: 24px;
+
+    padding-top: 0px;
+
+    width: 40px;
+
+}
+
+
+
+/* RESUMEN TECNICO Y SOCIAL*/
+
+.resumen{
+
+	width: 530px;
+
+	height: 147px;
+
+	background-color: #333333;
+
+	border:1px solid orange;
+
+	margin-top: 10px;
+
+	float: left;
+
+}
+
+
+
+.resumen_tecnico{
+
+	background-color: orange;
+
+	width: 150px;
+
+	height: 60px;
+
+	float:left;
+
+	text-align: center;
+
+	margin-left: 80px;
+
+}
+
+
+
+#titulo_tecnico{
+
+	width: 150px;
+
+	height: 30px;
+
+	margin-top: 0px;
+
+	color: #333333;
+
+	text-align: center;
+
+}
+
+
+
+.resumen_social{
+
+	background-color: orange;
+
+	width: 150px;
+
+	height: 60px;
+
+	float:left;
+
+	margin-left: 50px;
+
+}
+
+
+
+#titulo_social{
+
+	width: 150px;
+
+	height: 30px;
+
+	margin-top: 0px;
+
+	color: #333333;
+
+	text-align: center;
+
+}
+
+
+
+h4{
+
+    margin-left: 5px;
+
+    margin-top: 10px;
+
+    color: orange;
+
+    text-align: center;
+
+
+
+}
+
+
+
+/*MENU DE NAVEGACION CUADRO DE PROGRESO*/
+
+
+
+#navegador{
+
+	width: 531px;
+
+    height: 48px;
+
+    margin-left: 400px;
+
+    padding-top: 30px;
+
+    float: left
+
+}
+
+
+
+#navegador ul{
+
+	list-style-type:none;
+
+	padding-left: 0px;
+
+}
+
+
+
+#navegador li{
+
+	display:inline;
+
+	text-align:center;
+
+	font-weight: bold;
+
+	width: 50px;
+
+	height: 30px;
+
+}
+
+
+
+#navegador li a{
+
+    padding: 15px 15px 15px 15px;
+
+    color: orange;
+
+    background-color: #333333;
+
+    border: 1px solid orange;
+
+    border-bottom: none;
+
+    text-decoration: none;
+
+}
+
+
+
+#navegador a:hover {
+
+	background-color:orange;
+
+	color:#333333;
+
+}
+
+
+
+/* FICHA DE PROGRESO TECNICO */
+
+
+
+#progreso_tecnico{
+
+	width: 530px;
+
+    height: 313px;
+
+    margin-left: 400px;
+
+    float: left
+
+}
+
+
+
+.ficha{
+
+	background-color: #333333;
+
+	width: 530px;
+
+	height: 310px;
+
+	border: 2px solid orange;
+
+}
+
+
+
+/* FICHA DE PROGRESO SOCIAL*/
+
+
+
+#progreso_social{
+
+    width: 530px;
+
+    height: 313px;
+
+    margin-left: 400px;
+
+    margin-top: 88px;
+
+}
+
+
+
+.ficha_social{
+
+	background-color: #333333;
+
+	width: 530px;
+
+	height: 310px;
+
+	border: 2px solid orange;
+
+}
+
