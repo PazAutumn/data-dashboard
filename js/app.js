@@ -73,6 +73,29 @@ detrac.innerHTML = detractors;
 var npsPercent = (parseInt(promoters) - parseInt(detractors)) + "%";
 nps.innerHTML = npsPercent;
 
+//STUDENT SATISFACTION
+var satis = document.getElementById('satisfaction');
+
+var satisfaction = parseInt((ratings[0].student.supera + ratings[1].student.supera)/2);
+satis.innerHTML = satisfaction;
+
+//TEACHER RATING
+var teacher = document.getElementById('teacher');
+
+var teacherRating = (ratings[0].teacher + ratings[1].teacher)/2;
+teacher.innerHTML = teacherRating;
+
+
+//JEDI MASTER RATING
+var jedi = document.getElementById('jedi');
+
+var jediRating = (ratings[0].jedi + ratings[1].jedi)/2;
+jedi.innerHTML = jediRating;
+
+
+
+
+
 //Tech Skills
 var tech = document.getElementById('numTech');
 var porTech = document.getElementById('porTech');
@@ -162,27 +185,10 @@ for (var i =0; i < generation.length; i++){
            
 	}
 }
-//STUDENT SATISFACTION
-var satis = document.getElementById('satisfaction');
 
-var satisfaction = parseInt((ratings[0].student.supera + ratings[1].student.supera)/2);
-satis.innerHTML = satisfaction;
-
-//TEACHER RATING
-var teacher = document.getElementById('teacher');
-
-var teacherRating = (ratings[0].teacher + ratings[1].teacher)/2;
-teacher.innerHTML = teacherRating;
-
-
-//JEDI MASTER RATING
-var jedi = document.getElementById('jedi');
-
-var jediRating = (ratings[0].jedi + ratings[1].jedi)/2;
-jedi.innerHTML = jediRating;
 
 //evento de click botones laterales
-
+/*
 var overview = document.getElementById('overview');
 var students = document.getElementById('students');
 var teachers = document.getElementById('teachers');
@@ -197,4 +203,4 @@ overview.addEventListener("click", function(){
 
 students.addEventListener("click", function(){
 	optionb.setAttribute("style", "background-color: orange");
-})
+})*/
